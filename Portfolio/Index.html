@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anul Anand | Freelance Sports Writer, Editor & SEO Content Expert</title>
+    <meta name="description" content="Hire Anul Anand, a freelance Sports Writer, Sub Editor, and SEO Content expert. 4+ years specializing in Cricket, Football, MMA analysis for CricTracker, Sportskeeda, and InsideSport.">
+    <link rel="canonical" href="https://[YOUR-DOMAIN-NAME]/index.html">
+    <!-- Load Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter Font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* 1. Base Styles for Fade-In Animation */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .animate-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* 2. Keyframes for Hero Avatar/Image Floating Effect */
+        @keyframes float {
+            0% { transform: translatey(0px); }
+            50% { transform: translatey(-10px); }
+            100% { transform: translatey(0px); }
+        }
+
+        .hero-float {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        /* 3. Dynamic Accent Line for Headers */
+        .accent-line {
+            display: block;
+            width: 80px;
+            height: 4px;
+            margin: 0 auto 1.5rem; /* Centered margin for mobile/small screens */
+            background-color: #0ea5e9; /* Accent color */
+            border-radius: 9999px;
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smooth easing */
+        }
+        .is-visible .accent-line {
+            transform: scaleX(1);
+        }
+
+        /* Adjust line margin for desktop */
+        @media (min-width: 768px) {
+            .accent-line {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    </style>
+    <!-- Tailwind Configuration for Custom Colors (Bright Theme) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-bg': '#f8fafc', // Very light background (Slate 50)
+                        'secondary-bg': '#ffffff', // White (Card background)
+                        'main-text': '#0f172a', // Slate 900 (Dark text)
+                        'accent': '#0ea5e9', // Sky 500 (Vibrant blue)
+                        'accent-dark': '#0284c7', // Sky 600 (Darker accent for hover)
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-primary-bg text-main-text antialiased">
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-secondary-bg/95 backdrop-blur-sm shadow-lg">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold tracking-tight text-accent hover:text-accent-dark transition duration-300">
+                Anul Anand
+            </a>
+            <div class="hidden md:flex space-x-8 text-lg font-medium">
+                <a href="#portfolio" class="hover:text-accent-dark transition duration-200">Portfolio</a>
+                <a href="#skills" class="hover:text-accent-dark transition duration-200">Skills</a>
+                <a href="#experience" class="hover:text-accent-dark transition duration-200">Experience</a>
+                <a href="#contact" class="hover:text-accent-dark transition duration-200">Contact</a>
+            </div>
+            <!-- Mobile Menu Button (Hamburger Icon) -->
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md hover:bg-gray-100 transition duration-200 focus:outline-none">
+                <svg class="w-6 h-6 text-main-text" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-secondary-bg pb-4">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col items-center">
+                <a href="#portfolio" class="block py-2 px-3 rounded-md text-base font-medium hover:bg-gray-100 w-full text-center" onclick="closeMobileMenu()">Portfolio</a>
+                <a href="#skills" class="block py-2 px-3 rounded-md text-base font-medium hover:bg-gray-100 w-full text-center" onclick="closeMobileMenu()">Skills</a>
+                <a href="#experience" class="block py-2 px-3 rounded-md text-base font-medium hover:bg-gray-100 w-full text-center" onclick="closeMobileMenu()">Experience</a>
+                <a href="#contact" class="block py-2 px-3 rounded-md text-base font-medium hover:bg-gray-100 w-full text-center" onclick="closeMobileMenu()">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- 1. Hero Section -->
+        <section id="hero" class="py-24 md:py-32 lg:py-40 flex flex-col md:flex-row items-center justify-between text-center md:text-left animate-on-scroll">
+            <div class="md:w-3/5">
+                <p class="text-xl text-gray-500 mb-2 font-medium">Freelance Sports Writer & Editor</p>
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-4 tracking-tighter">
+                    I craft <u>Impactful Sports Narratives</u>.
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-xl mx-auto md:mx-0">
+                    4+ years of expertise in <b>SEO-optimized content</b>, sub-editing, and real-time coverage across <b>Cricket, Football, and Combat Sports</b>.
+                </p>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="#portfolio" class="px-8 py-3 bg-accent text-white font-semibold text-lg rounded-xl shadow-lg hover:bg-accent-dark transition duration-300 transform hover:scale-105">
+                        View Published Work
+                    </a>
+                    <a href="#contact" class="px-8 py-3 bg-secondary-bg text-main-text font-semibold text-lg rounded-xl border border-gray-300 hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+                        Hire Me
+                    </a>
+                </div>
+            </div>
+            <!-- Mock Avatar/Image Placeholder with Floating Animation -->
+            <div class="mt-12 md:mt-0 md:w-1/3 hero-float">
+                 <img src="/resources/WhatsApp Image 2025-11-14 at 14.07.08_17994fa0.jpg" alt="Anul Anand Profile Picture"
+                      class="rounded-full w-60 h-60 mx-auto md:w-72 md:h-72 object-cover border-4 border-accent shadow-2xl transition duration-500 hover:rotate-3">
+            </div>
+        </section>
+
+        <!-- 2. Portfolio Section (Published Work) -->
+        <section id="portfolio" class="py-16 md:py-24 border-t border-gray-200 animate-on-scroll">
+            <h2 class="text-4xl md:text-5xl font-bold text-center tracking-tight">Recent <span class="text-accent">Publications</span></h2>
+            <span class="accent-line"></span>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Portfolio Card 1: CricTracker -->
+                <div class="portfolio-card bg-secondary-bg p-6 rounded-xl shadow-xl border border-gray-200 transition duration-300 hover:border-accent text-center transform hover:scale-[1.03] hover:shadow-2xl hover:shadow-accent/30 animate-on-scroll" data-tilt>
+                    <h3 class="text-2xl font-semibold mb-2 text-accent">CricTracker</h3>
+                    <p class="text-gray-600 mb-4 h-12 overflow-hidden">
+                        Cricket match reports, player profiles, and opinion articles for a global audience.
+                    </p>
+                    <div class="flex flex-wrap gap-2 justify-center mb-4">
+                        <span class="text-xs font-medium px-3 py-1 bg-gray-200 rounded-full text-gray-700">Cricket</span>
+                        <span class="text-xs font-medium px-3 py-1 bg-gray-200 rounded-full text-gray-700">Analysis</span>
+                    </div>
+                    <a href="https://www.crictracker.com/author/anul-anand/" target="_blank" class="inline-flex items-center text-accent hover:text-accent-dark font-medium transition duration-200 group">
+                        View Author Page
+                        <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Portfolio Card 2: InsideSport -->
+                <div class="portfolio-card bg-secondary-bg p-6 rounded-xl shadow-xl border border-gray-200 transition duration-300 hover:border-accent text-center transform hover:scale-[1.03] hover:shadow-2xl hover:shadow-accent/30 animate-on-scroll" data-tilt>
+                    <h3 class="text-2xl font-semibold mb-2 text-accent">InsideSport</h3>
+                    <p class="text-gray-600 mb-4 h-12 overflow-hidden">
+                        Authored analytical, stats-backed features across cricket and football for high engagement.
+                    </p>
+                    <div class="flex flex-wrap gap-2 justify-center mb-4">
+                        <span class="text-xs font-medium px-3 py-1 bg-gray-200 rounded-full text-gray-700">Football</span>
+                        <span class="text-xs font-medium px-3 py-1 bg-gray-200 rounded-full text-gray-700">SEO</span>
+                    </div>
+                    <a href="https://www.insidesport.in/author/anul-anand/" target="_blank" class="inline-flex items-center text-accent hover:text-accent-dark font-medium transition duration-200 group">
+                        View Author Page
+                        <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Portfolio Card 3: OneCricket -->
+                <div class="portfolio-card bg-secondary-bg p-6 rounded-xl shadow-xl border border-gray-200 transition duration-300 hover:border-accent text-center transform hover:scale-[1.03] hover:shadow-2xl hover:shadow-accent/30 animate-on-scroll" data-tilt>
+                    <h3 class="text-2xl font-semibold mb-2 text-accent">OneCricket</h3>
+                    <p class="text-gray-600 mb-4 h-12 overflow-hidden">
+                        Contributed comprehensive cricket coverage, ensuring timely and accurate editorial standards.
+                    </p>
+                    <div class="flex flex-wrap gap-2 justify-center mb-4">
+                        <span class="text-xs font-medium px-3 py-1 bg-gray-200 rounded-full text-gray-700">Content Strategy</span>
+                        <span class="text-xs font-medium px-3 py-1 bg-gray-200 rounded-full text-gray-700">Editing</span>
+                    </div>
+                    <a href="https://cricket.one/author-profile/anul-singh/80" target="_blank" class="inline-flex items-center text-accent hover:text-accent-dark font-medium transition duration-200 group">
+                        View Author Page
+                        <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Portfolio Card 4: Sidekick Boxing -->
+                <div class="portfolio-card bg-secondary-bg p-6 rounded-xl shadow-xl border border-gray-200 transition duration-300 hover:border-accent text-center transform hover:scale-[1.03] hover:shadow-2xl hover:shadow-accent/30 animate-on-scroll" data-tilt>
+                    <h3 class="text-2xl font-semibold mb-2 text-accent">Sidekick Boxing</h3>
+                    <p class="text-gray-600 mb-4 h-12 overflow-hidden">
+                        Researched and wrote in-depth MMA stories, fighter profiles, and daily blogs on combat sports.
+                    </p>
+                    <div class="flex flex-wrap gap-2 justify-center mb-4">
+                        <span class="text-xs font-medium px-3 py-1 bg-gray-200 rounded-full text-gray-700">MMA/Boxing</span>
+                        <span class="text-xs font-medium px-3 py-1 bg-gray-200 rounded-full text-gray-700">Feature Writing</span>
+                    </div>
+                    <a href="https://sidekickboxing.co.uk/author/anul-anand/" target="_blank" class="inline-flex items-center text-accent hover:text-accent-dark font-medium transition duration-200 group">
+                        View Author Page
+                        <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 3. Core Skills Section -->
+        <section id="skills" class="py-16 md:py-24 border-t border-gray-200 animate-on-scroll">
+            <h2 class="text-4xl md:text-5xl font-bold text-center tracking-tight">Core <span class="text-accent">Expertise</span></h2>
+            <span class="accent-line"></span>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+
+                <!-- Skill 1: SEO Optimization -->
+                <div class="flex flex-col items-center p-4 bg-secondary-bg rounded-xl shadow-md hover:shadow-accent/40 transition duration-300 transform hover:-translate-y-1 border border-gray-100 animate-on-scroll">
+                    <span class="text-3xl text-accent mb-2">🔍</span>
+                    <span class="text-sm font-medium text-main-text text-center">SEO Optimization & Strategy</span>
+                </div>
+
+                <!-- Skill 2: Copy Editing -->
+                <div class="flex flex-col items-center p-4 bg-secondary-bg rounded-xl shadow-md hover:shadow-accent/40 transition duration-300 transform hover:-translate-y-1 border border-gray-100 animate-on-scroll" style="transition-delay: 0.1s;">
+                    <span class="text-3xl text-accent mb-2">✍️</span>
+                    <span class="text-sm font-medium text-main-text text-center">Copy Editing & Proofreading</span>
+                </div>
+
+                <!-- Skill 3: Sports Analysis -->
+                <div class="flex flex-col items-center p-4 bg-secondary-bg rounded-xl shadow-md hover:shadow-accent/40 transition duration-300 transform hover:-translate-y-1 border border-gray-100 animate-on-scroll" style="transition-delay: 0.2s;">
+                    <span class="text-3xl text-accent mb-2">📊</span>
+                    <span class="text-sm font-medium text-main-text text-center">Sports Analysis & Data Writing</span>
+                </div>
+
+                <!-- Skill 4: Deadline Management -->
+                <div class="flex flex-col items-center p-4 bg-secondary-bg rounded-xl shadow-md hover:shadow-accent/40 transition duration-300 transform hover:-translate-y-1 border border-gray-100 animate-on-scroll" style="transition-delay: 0.3s;">
+                    <span class="text-3xl text-accent mb-2">⏱️</span>
+                    <span class="text-sm font-medium text-main-text text-center">Deadline & Workflow Management</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. Experience Summary Section -->
+        <section id="experience" class="py-16 md:py-24 border-t border-gray-200 animate-on-scroll">
+            <h2 class="text-4xl md:text-5xl font-bold text-center tracking-tight">Professional <span class="text-accent">Experience</span></h2>
+            <span class="accent-line"></span>
+
+            <div class="max-w-4xl mx-auto space-y-8">
+
+                <!-- Experience Item 1 -->
+                <div class="bg-secondary-bg p-6 rounded-xl shadow-md border border-gray-200 animate-on-scroll">
+                    <h3 class="text-xl font-bold text-main-text">Sub Editor</h3>
+                    <p class="text-accent font-semibold">Sportskeeda <span class="text-gray-500 text-sm">(May 2023 – Sep 2024)</span></p>
+                    <ul class="list-disc list-inside text-gray-600 mt-2 space-y-1 pl-4">
+                        <li>Edited and proofread daily sports articles for <b>grammar, accuracy, and tone consistency</b>.</li>
+                        <li>Crafted <b>SEO-optimized headlines</b> and improved article structure for better readability.</li>
+                        <li>Coordinated with content teams for planning, publication, and workflow management.</li>
+                    </ul>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="bg-secondary-bg p-6 rounded-xl shadow-md border border-gray-200 animate-on-scroll" style="transition-delay: 0.1s;">
+                    <h3 class="text-xl font-bold text-main-text">Freelance Writer (Various)</h3>
+                    <p class="text-accent font-semibold">Goal, Mobile Premier League, Sidekick Boxing <span class="text-gray-500 text-sm">(Oct 2024 – May 2025)</span></p>
+                    <ul class="list-disc list-inside text-gray-600 mt-2 space-y-1 pl-4">
+                        <li>Delivered <b>real-time coverage</b> and feature pieces for major events like IPL.</li>
+                        <li>Wrote engaging and analytical articles on <b>U.S. sports and MMA</b>, ensuring factual integrity.</li>
+                        <li>Produced crisp, SEO-optimized content aligned with diverse editorial tones.</li>
+                    </ul>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="bg-secondary-bg p-6 rounded-xl shadow-md border border-gray-200 animate-on-scroll" style="transition-delay: 0.2s;">
+                    <h3 class="text-xl font-bold text-main-text">Freelance Cricket Writer</h3>
+                    <p class="text-accent font-semibold">CricTracker <span class="text-gray-500 text-sm">(Dec 2021 – Nov 2022)</span></p>
+                    <ul class="list-disc list-inside text-gray-600 mt-2 space-y-1 pl-4">
+                        <li>Produced <b>match reports, player profiles, and opinion articles</b> for global cricket coverage.</li>
+                        <li>Ensured timely delivery and editorial accuracy across domestic and international matches.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 5. Contact Section -->
+        <section id="contact" class="py-16 md:py-24 border-t border-gray-200 animate-on-scroll">
+            <h2 class="text-4xl md:text-5xl font-bold text-center tracking-tight">Let's <span class="text-accent">Work Together</span></h2>
+            <span class="accent-line"></span>
+
+            <div class="max-w-xl mx-auto bg-secondary-bg p-8 rounded-xl shadow-2xl border border-gray-200">
+                <form id="contact-form" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-main-text mb-1">Name</label>
+                        <input type="text" id="name" name="name" required
+                               class="w-full px-4 py-2 bg-white border border-gray-300 rounded-lg focus:border-accent focus:ring-1 focus:ring-accent text-main-text transition duration-200">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-main-text mb-1">Email</label>
+                        <input type="email" id="email" name="email" required
+                               class="w-full px-4 py-2 bg-white border border-gray-300 rounded-lg focus:border-accent focus:ring-1 focus:ring-accent text-main-text transition duration-200">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-main-text mb-1">Project Details</label>
+                        <textarea id="message" name="message" rows="4" required
+                                  class="w-full px-4 py-2 bg-white border border-gray-300 rounded-lg focus:border-accent focus:ring-1 focus:ring-accent text-main-text transition duration-200"></textarea>
+                    </div>
+
+                    <button type="submit"
+                            class="w-full px-6 py-3 bg-accent text-white font-semibold text-lg rounded-xl shadow-md hover:bg-accent-dark transition duration-300 transform hover:scale-[1.01]">
+                        Send Inquiry
+                    </button>
+                    <div id="status-message" class="text-center font-medium mt-4 hidden"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 mt-16 py-8 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-600">
+            <p>&copy; 2025 Anul Anand. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4 text-xl">
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/anul-anand-b8754b202?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="hover:text-accent transition duration-200" title="LinkedIn">
+                    <!-- Simple LinkedIn icon placeholder (using SVG for clarity) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.568-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/38anul?igsh=MWRkYnUwdGpiaDkwaQ==" target="_blank" class="hover:text-accent transition duration-200" title="Instagram">
+                    <!-- Simple Instagram icon placeholder -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M12 2c2.753 0 3.161.012 4.232.061 1.065.05 1.734.208 2.39.467.755.292 1.343.689 1.956 1.302s1.01 1.201 1.302 1.956c.259.656.417 1.325.467 2.39.049 1.071.061 1.479.061 4.232s-.012 3.161-.061 4.232c-.05 1.065-.208 1.734-.467 2.39-.292.755-.689 1.343-1.302 1.956s-1.201 1.01-1.956 1.302c-.656.259-1.325.417-2.39.467-1.071.049-1.479.061-4.232.061s-3.161-.012-4.232-.061c-1.065-.05-1.734-.208-2.39-.467-.755-.292-1.343-.689-1.956-1.302s-1.01-1.201-1.302-1.956c-.259-.656-.417-1.325-.467-2.39-.049-1.071-.061-1.479-.061-4.232s.012-3.161.061-4.232c.05-1.065.208-1.734.467-2.39.292-.755.689-1.343 1.302-1.956s1.201-1.01 1.956-1.302c.656-.259 1.325-.417 2.39-.467 1.071-.049 1.479-.061 4.232-.061zm0 2c-2.715 0-3.04.01-4.102.059-.967.045-1.428.192-1.895.372-.647.248-1.15.59-1.583 1.023s-.775.936-1.023 1.583c-.18.467-.327.928-.372 1.895-.049 1.062-.059 1.387-.059 4.102s.01 3.04.059 4.102c.045.967.192 1.428.372 1.895.248.647.59 1.15 1.023 1.583s.936.775 1.583 1.023c.467.18.928.327 1.895.372 1.062.049 1.387.059 4.102.059s3.04-.01 4.102-.059c.967-.045 1.428-.192 1.895-.372.647-.248 1.15-.59 1.583-1.023s.775-.936 1.023-1.583c.18-.467.327-.928.372-1.895.049-1.062.059-1.387.059-4.102s-.01-3.04-.059-4.102c-.045-.967-.192-1.428-.372-1.895-.248-.647-.59-1.15-1.023-1.583s-.936-.775-1.583-1.023c-.467-.18-.928-.327-1.895-.372-1.062-.049-1.387-.059-4.102-.059zm0 5c-3.86 0-7 3.14-7 7s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm0 2c2.753 0 5 2.247 5 5s-2.247 5-5 5-5-2.247-5-5 2.247-5 5-5zm6.5-7c0 .825.675 1.5 1.5 1.5s1.5-.675 1.5-1.5-.675-1.5-1.5-1.5-1.5.675-1.5 1.5z"/></svg>
+                </a>
+                <!-- Twitter (X) -->
+                <a href="https://x.com/38anul?s=21" target="_blank" class="hover:text-accent transition duration-200" title="Twitter/X">
+                    <!-- Simple Twitter/X icon placeholder -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M19.642 5.035c-.714.316-1.487.527-2.298.625.828-.485 1.464-1.253 1.764-2.164-.775.459-1.636.792-2.551.97-.735-.783-1.782-1.272-2.946-1.272-2.228 0-4.04 1.812-4.04 4.04 0 .317.036.626.104.921-3.359-.168-6.331-1.777-8.323-4.215-.348.598-.548 1.295-.548 2.036 0 1.4.71 2.642 1.785 3.374-.658-.02-1.276-.201-1.815-.497v.05c0 1.96 1.396 3.597 3.245 3.97-.34.098-.7.15-1.07.15-.262 0-.516-.025-.764-.073.515 1.606 2.012 2.775 3.79 2.808-1.389 1.087-3.131 1.734-5.033 1.734-.328 0-.654-.019-.976-.057 1.79 1.15 3.923 1.82 6.22 1.82 7.464 0 11.547-6.182 11.547-11.548 0-.176-.004-.352-.012-.527.792-.569 1.477-1.282 2.022-2.09z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactivity and Advanced Animations -->
+    <script>
+        // Toggle Mobile Menu
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Function to close mobile menu after clicking a link
+        function closeMobileMenu() {
+            if (!mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.add('hidden');
+            }
+        }
+
+        // Contact Form Submission Handler (Unchanged)
+        const contactForm = document.getElementById('contact-form');
+        const statusMessage = document.getElementById('status-message');
+
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (!name || !email || !message) {
+                statusMessage.textContent = 'Please fill out all fields.';
+                statusMessage.className = 'text-center font-medium mt-4 text-red-600';
+                statusMessage.classList.remove('hidden');
+                return;
+            }
+
+            statusMessage.textContent = 'Sending message...';
+            statusMessage.className = 'text-center font-medium mt-4 text-accent-dark';
+            statusMessage.classList.remove('hidden');
+
+            setTimeout(() => {
+                statusMessage.textContent = 'Inquiry successfully sent! Anul will get back to you soon.';
+                statusMessage.className = 'text-center font-medium mt-4 text-green-600';
+                contactForm.reset();
+
+                setTimeout(() => {
+                    statusMessage.classList.add('hidden');
+                }, 5000);
+
+            }, 2000);
+        });
+
+        // --- Advanced Animation Logic: Intersection Observer for Scroll-Triggered Effects ---
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1 // Trigger when 10% of the element is visible
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Add visibility class to trigger CSS animation
+                    entry.target.classList.add('is-visible');
+
+                    // Stop observing once visible (one-time animation)
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Target all elements marked for scroll animation
+        document.querySelectorAll('.animate-on-scroll').forEach(section => {
+            observer.observe(section);
+        });
+
+        // --- Interactive 3D Hover (Simple CSS/JS tilt simulation) ---
+        document.querySelectorAll('.portfolio-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+
+                const rotateX = (y - centerY) / 15; // Invert for natural tilt
+                const rotateY = (x - centerX) / 15;
+
+                // Apply CSS transform for tilt and light parallax
+                card.style.transform = `
+                    scale(1.03) 
+                    perspective(1000px) 
+                    rotateX(${rotateX}deg) 
+                    rotateY(${-rotateY}deg)
+                `;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                // Reset transform on mouse leave
+                card.style.transform = 'scale(1.03) perspective(1000px) rotateX(0deg) rotateY(0deg)';
+            });
+        });
+    </script>
+</body>
+</html>
